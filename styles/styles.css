@@ -361,7 +361,44 @@ nav{
         color: var(--secondary-color);
         
    }
+   /* careers section styles */
 
+   
+   .careers-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    color: whitesmoke;
+   }
+   .careers-details{
+    margin-left: 140px;
+   }
+   .careers-details>h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+   }
+   .careers-details>p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+   }
+   .details{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+   }
+   .careers-images>img{
+    width: 600px;
+    height: 600px;
+   }
+   .btn-careers{
+    background-color: whitesmoke;
+    color: var(--secondary-color);
+    margin-top: 30px;
+    
+   }
     
 /* Responsive styles */
 
@@ -483,9 +520,23 @@ nav{
     font-size: 10px;
 
    }
-   
-  
+   /* careers section styles */
 
+   
+   .careers-container{
+    flex-direction: column;
+   }
+   .careers-details{
+    margin: 20px;
+   }
+   .details{
+
+    gap: 20px;
+   }
+   .careers-images>img{
+    width: 400px;
+    height: 400px;
+   }
 }
 
 
@@ -588,6 +639,23 @@ nav{
    .game-item{
         padding-right: 5px;
    }
+     /* careers section styles */
+
+   
+     .careers-container{
+        flex-direction: column-reverse;
+       }
+       .careers-details{
+        margin: 20px;
+       }
+       .details{
+    
+        gap: 40px;
+       }
+       .careers-images>img{
+        width: 500px;
+        height: 500px;
+       }
   
   
 }
