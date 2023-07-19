@@ -282,6 +282,7 @@ nav{
         margin-bottom: 10px;
       }
       .game-details>p{
+        font-size: 14px;
         word-wrap: break-word;
       }
       .game-image{
@@ -399,12 +400,101 @@ nav{
     margin-top: 30px;
     
    }
-    
+
+   /* instant section styles */
+   .instant-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .instant-image>img{
+    width: 500px;
+    height: 500px;
+    margin-top: 80px;
+
+   }
+   .overlay>img{
+    width: 300px;
+    height: 350px;
+    position: relative;
+    bottom: 300px;
+    right: 100px;
+   }
+   .instant-details{
+    margin-top: -100px;
+   margin-right: 200px;
+   text-align: right;
+   }
+   .instant-details>h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text-color);
+   }
+   .instant-details>h1>span{
+    color: var(--secondary-color);
+   }
+   .instant-details>p{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-color);
+   }
+
+
+
+   
+   /* anytime section styles */
+
+
+   .anytime-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .anytime-image>img{
+    width: 500px;
+    height: 500px;
+    margin-top: 10px;
+
+   }
+   .overlay>img{
+    width: 300px;
+    height: 350px;
+    position: relative;
+    bottom: 300px;
+    right: 100px;
+   }
+   .anytime-details{
+    margin-top: -200px;
+   margin-left: 200px;
+   text-align: right;
+   }
+   .anytime-details>h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text-color);
+   }
+   .anytime-details>h1>span{
+    color: var(--secondary-color);
+   }
+   .anytime-details>p{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-color);
+   }
 /* Responsive styles */
 
 /* MObile responsive */
 @media screen and (max-width: 576px) {
-    
+ 
+  
+  /* Hide scrollbar handle */
+  body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  
+      
     /* Navbar section styles */
     nav{
         width: auto;
@@ -525,6 +615,7 @@ nav{
    
    .careers-container{
     flex-direction: column;
+    margin-top: 50px;
    }
    .careers-details{
     margin: 20px;
@@ -537,8 +628,82 @@ nav{
     width: 400px;
     height: 400px;
    }
-}
+    
+   /* instant section styles */
+   .instant-container{
+   flex-direction: column;
+   
+   }
+   .instant-image>img{
+    width: 300px;
+    height: 300px;
+    
 
+   }
+   .overlay>img{
+    width: 200px;
+    height: 250px;
+    bottom: 200px;
+    right: 50px;
+   }
+   .instant-details{
+    margin-top: 80px;
+   margin-right: 10px;
+   text-align: center;
+   }
+   .instant-details>h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text-color);
+   }
+   .instant-details>h1>span{
+    color: var(--secondary-color);
+   }
+   .instant-details>p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color);
+   }
+
+
+   /* anytime section styles */
+   .anytime-container{
+   flex-direction: column;
+   
+   }
+   .anytime-image>img{
+    width: 300px;
+    height: 300px;
+    
+
+   }
+   .overlay>img{
+    width: 200px;
+    height: 250px;
+    bottom: 200px;
+    right: 50px;
+   }
+   .anytime-details{
+    margin-bottom: 50px;
+    margin: 10px;
+   text-align: center;
+   }
+   .anytime-details>h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text-color);
+   }
+   .anytime-details>h1>span{
+    color: var(--secondary-color);
+   }
+   .anytime-details>p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color);
+   }
+}
 
 @media screen and (min-width:577px) and (max-width:960px) {
     
@@ -656,6 +821,58 @@ nav{
         width: 500px;
         height: 500px;
        }
+   /* instant section styles */
+   .instant-container{
+    flex-direction: column-reverse;
+    
+    }
+    .instant-image>img{
+     width: 300px;
+     height: 300px;
+     
+ 
+    }
+    .instant-image {
+        margin-top: 60px;
+    }
+    .overlay>img{
+     width: 200px;
+     height: 250px;
+     bottom: 200px;
+     right: 50px;
+    }
+    .instant-details{
+     margin-bottom: 40px;
+    margin-right: 10px;
+    text-align: center;
+    }
+
+   /* anytime section styles */
+   .anytime-container{
+    flex-direction: column;
+    
+    }
+    .anytime-image>img{
+     width: 300px;
+     height: 300px;
+     
+ 
+    }
+    .anytime-image {
+        margin-top: 60px;
+    }
+    .overlay>img{
+     width: 200px;
+     height: 250px;
+     bottom: 200px;
+     right: 50px;
+    }
+    .anytime-details{
+     margin-bottom: 40px;
+    margin-left: 10px;
+    text-align: center;
+    }
+   
   
   
 }
