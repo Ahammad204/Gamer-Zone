@@ -466,21 +466,24 @@ nav{
     margin-bottom: 80px;
     margin-left: auto;
     margin-right: auto;
+    min-width: 80%;
    }
    .game-item-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
-    /* margin-left: 2px;
-    margin-right: 5px; */
+    gap: 10px;
+    margin-left: 2px;
+    
    }
    .game-item>img{
-        width: 45px;
-        height: 45px;
+        width: 30px;
+        height: 30px;
    }
-   .game-item{
-        padding-right: 5px;
+   .game-item>span{
+    font-size: 10px;
+
    }
+   
   
 
 }
