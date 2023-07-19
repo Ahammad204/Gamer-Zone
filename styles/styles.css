@@ -186,8 +186,79 @@ nav{
 .purpose-details>h2{
     color: var(--text-color);
 }
+/* footer section */
 
+    footer{
+        margin-top: 50px;
+        height: auto;
+        background-color: #0B0223;
+        color: antiquewhite;
+       
 
+    }
+    .footer-logo{
+        margin-left: 220px;
+        margin-right: 330px;
+        margin-top: 38px;
+        text-align: center;
+        display: flex;
+    }
+    .footer-logo>img{
+        width: 80px;
+        height: 40px;
+        margin: 8px;
+    }
+    .footer-logo>span{
+        font-size: 45px;
+        font-weight: 700;
+        color: whitesmoke;
+    }
+    .footer-logo>span>span{
+        color: var(--secondary-color);
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-menu>ul{
+        display: flex;
+        gap: 60px;
+        list-style: none;
+        margin-top: 30px;
+    }
+    .footer-menu>ul>li{
+        text-decoration: none;
+    }
+    .social-icon>ul{
+        display: flex;
+        gap: 50px;
+        margin-top: 30px;
+        list-style: none;
+        
+    }
+    
+    .condition>ul{
+        display: flex;
+        gap: 40px;
+        margin-top: 30px;
+        list-style: none;
+        margin-bottom: 30px;
+    }
+
+    .condition>ul>il{
+        text-decoration: none;
+        width: 24px;
+        height: 20px;
+    }
+    .footer-container>small{
+        color: antiquewhite;
+        margin-bottom: 40px;
+    }
+    
+    
 /* Responsive styles */
 
 /* MObile responsive */
@@ -242,10 +313,43 @@ nav{
         margin-left: 40px;
     }
     .purpose-images>img{
-        width: 450px;
+        width: 400px;
         height: 300px;
         margin-top: 50px;
     }
+    /* footer section */
+
+    footer{
+       
+        height: auto;
+        background-color: #0B0223;
+        color: antiquewhite;
+    }
+    .footer-logo{
+        margin-left: 220px;
+        margin-right: 260px;
+    }
+  
+    .footer-menu>ul{
+        display: grid;
+        gap: 20px;
+       grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .social-icon>ul{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        
+    }
+    
+    .condition>ul{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
 }
 
 
@@ -305,4 +409,21 @@ nav{
         height: 500px;
         margin-top: 50px;
     }
+    .purpose-images>img{
+        width: 500px;
+        height: 400px;
+        
+    }
+
+    /* footer section styles */
+   
+    .social-icon>ul{
+        gap: 40px;
+        
+    }
+    .footer-menu>ul{
+        gap: 20px;
+       
+    }
+  
 }
