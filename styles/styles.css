@@ -257,7 +257,79 @@ nav{
         color: antiquewhite;
         margin-bottom: 40px;
     }
+  
+      /* online Game section styles */
+      .game-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: var(--text-color);
+        
+      }
+      .game-details>h1>span{
+        z-index: -1;
+        background: linear-gradient(to right, #F948B2, #8758F1);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      .game-details>h1{
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .game-details>p{
+        word-wrap: break-word;
+      }
+      .game-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+   .game-img>img{
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    margin-top: 40px;
+    transition: .5s ease;
+   }
+   .game-img{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+   }
+   .image-btn{
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-top: 40px;
+    border-radius: 10px;
+    padding-top: 80px;
+    visibility: hidden;
+    border: 2px solid var(--secondary-color);
+   
+   }
+   .image-btn>small{
+    color: var(--secondary-color);
     
+   }
+   .game-img:hover .image-btn{
+    visibility: visible;
+
+   }
+   .game-img >small{
+    font-size: 12px;
+    word-wrap: break-word;
+    margin-top: 50px;
+   }
+   
+
     
 /* Responsive styles */
 
@@ -349,7 +421,13 @@ nav{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    
+    /* online game styles */
+    .game-image {
+        flex-direction: column;
+    }
+    .game-details>p{
+        font-size: 1.5rem;
+      }
 }
 
 
@@ -414,7 +492,7 @@ nav{
         height: 400px;
         
     }
-
+  
     /* footer section styles */
    
     .social-icon>ul{
@@ -424,6 +502,12 @@ nav{
     .footer-menu>ul{
         gap: 20px;
        
+    }
+
+     /* online game styles */
+     .game-image {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
   
 }
